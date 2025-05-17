@@ -204,3 +204,13 @@ footer p {
     #0f0c29
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.link-tree-page {
+  background: #1a1333; /* fallback */
+  background: linear-gradient(
+    to bottom right,
+    #1a1333 0%,
+    #2d1457 50%,
+    #3a2067 100%
+  );
+}
