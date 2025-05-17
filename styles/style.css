@@ -70,7 +70,7 @@ nav a:hover {
   background: linear-gradient(
     to right,
     #a21caf,
-    /* Purple */ #3b82f6 /* Blue */
+    #3b82f6
   ); /* Reverse gradient on hover */
   transform: scale(1.05); /* Slightly enlarge on hover */
 }
