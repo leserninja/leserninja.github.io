@@ -54,9 +54,9 @@ nav a:hover {
   display: block;
   background: linear-gradient(
     to right,
-    red,
-    purple
-  ); /* Red to purple gradient */
+    #3b82f6,
+    /* Blue */ #a21caf /* Purple */
+  ); /* Blue to purple gradient */
   color: white;
   text-decoration: none;
   padding: 15px;
@@ -69,8 +69,8 @@ nav a:hover {
 .link-button:hover {
   background: linear-gradient(
     to right,
-    purple,
-    red
+    #a21caf,
+    /* Purple */ #3b82f6 /* Blue */
   ); /* Reverse gradient on hover */
   transform: scale(1.05); /* Slightly enlarge on hover */
 }
