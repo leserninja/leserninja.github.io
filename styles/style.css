@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, gray, black);
+  background: #000; /* Changed to solid black */
   color: white;
   display: flex;
   justify-content: center;
