@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body class="about-me-page">
+    <div class="sidebar" id="sidebar">
+      <button class="close-btn" onclick="toggleSidebar()">×</button>
+      <nav>
+        <a href="about-me.html" class="tab-btn">About Me</a>
+        <a href="link-tree.html" class="tab-btn">Link Tree</a>
+      </nav>
+    </div>
+    <button class="open-btn" onclick="toggleSidebar()">☰</button>
     <div class="container">
       <header>
         <h1>About Me</h1>
@@ -17,20 +25,8 @@
           and all things tech. Exploring the realms of networking and
           cybersecurity and nature fuels my creativity.
         </p>
-        <a href="index.html" class="link-button">Back to Home</a>
-        <span
-          style="
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            font-size: 13px;
-            color: #d8b4ff;
-            opacity: 0.7;
-          "
-        >
-        
-        </span>
       </main>
     </div>
+    <script src="scripts/main.js"></script>
   </body>
 </html>

@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body class="link-tree-page">
+    <div class="sidebar" id="sidebar">
+      <button class="close-btn" onclick="toggleSidebar()">×</button>
+      <nav>
+        <a href="about-me.html" class="tab-btn">About Me</a>
+        <a href="link-tree.html" class="tab-btn">Link Tree</a>
+      </nav>
+    </div>
+    <button class="open-btn" onclick="toggleSidebar()">☰</button>
     <div class="container">
       <header>
         <h1>Link Tree</h1>
@@ -19,8 +27,8 @@
           >Instagram</a
         >
         <a href="https://www.twitch.tv/iamleser_" class="link-button">Twitch</a>
-        <a href="index.html" class="link-button">Back to Home</a>
       </main>
     </div>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
