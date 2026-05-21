@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EC's lil corner</title>
+    <title>EC's modern corner</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link
       rel="icon"
@@ -12,31 +12,68 @@
     />
   </head>
   <body>
-    <div class="sidebar" id="sidebar">
-      <button class="close-btn" onclick="toggleSidebar()"></button>
-      <nav>
-        <a href="index.html" class="tab-btn">Home</a>
-        <a href="about-me.html" class="tab-btn">About Me</a>
-        <a href="link-tree.html" class="tab-btn">Link Tree</a>
-      </nav>
-    </div>
-    <button class="open-btn" onclick="toggleSidebar()">☰</button>
-    <div class="container">
-      <header>
-        <img
-          src="https://cdn.discordapp.com/stickers/1370377133930840094.png?name=Cat+drinking+lava"
-          alt="Profile Picture"
-          class="profile-pic"
-        />
-        <h1>Welcome to EC's Website</h1>
-      </header>
-      <main id="content">
-        <p>
-          Welcome to my simple personal website! Use the sidebar to navigate
-          through the pages.
-        </p>
+    <div class="page-shell">
+      <button class="open-btn" onclick="toggleSidebar()" aria-label="Open navigation">
+        ☰
+      </button>
+
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <div>
+            <p class="sidebar-label">Navigation</p>
+            <span class="sidebar-subtitle">Explore the site</span>
+          </div>
+          <button class="close-btn" onclick="toggleSidebar()" aria-label="Close navigation">
+            ×
+          </button>
+        </div>
+        <nav>
+          <a href="index.html" class="tab-btn active">Home</a>
+          <a href="about-me.html" class="tab-btn">About Me</a>
+          <a href="link-tree.html" class="tab-btn">Link Tree</a>
+        </nav>
+      </aside>
+
+      <main class="container">
+        <section class="hero">
+          <div class="hero-card">
+            <img
+              src="https://cdn.discordapp.com/stickers/1370377133930840094.png?name=Cat+drinking+lava"
+              alt="Profile Picture"
+              class="profile-pic"
+            />
+            <div class="hero-copy">
+              <span class="eyebrow">Hello, I'm EC</span>
+              <h1>Welcome to a cleaner personal corner of the web.</h1>
+              <p>
+                A modern landing page with soft glassmorphism, bold typography,
+                and quick access to bio and links.
+              </p>
+              <div class="hero-actions">
+                <a class="button primary" href="about-me.html">About Me</a>
+                <a class="button secondary" href="link-tree.html">Link Tree</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h2>Fast & Clean</h2>
+              <p>Minimal code with a modern layout that feels fresh on desktop and mobile.</p>
+            </article>
+            <article class="feature-card">
+              <h2>Responsive</h2>
+              <p>Navigation and content adapt smoothly across phones, tablets, and desktop screens.</p>
+            </article>
+            <article class="feature-card">
+              <h2>Easy to update</h2>
+              <p>Simple HTML/CSS structure keeps the page easy to maintain and personalize.</p>
+            </article>
+          </div>
+        </section>
       </main>
     </div>
+
     <script src="scripts/main.js"></script>
   </body>
 </html>

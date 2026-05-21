@@ -3,29 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About-me</title>
+    <title>About Me — EC</title>
     <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body class="about-me-page">
-    <div class="sidebar" id="sidebar">
-      <button class="close-btn" onclick="toggleSidebar()"></button>
-      <nav>
-        <a href="index.html" class="tab-btn">Home</a>
-        <a href="about-me.html" class="tab-btn">About Me</a>
-        <a href="link-tree.html" class="tab-btn">Link Tree</a>
-      </nav>
-    </div>
-    <button class="open-btn" onclick="toggleSidebar()">☰</button>
-    <div class="container">
-      <header>
-        <h1>About Me</h1>
-      </header>
-      <main>
-        <p>
-          My name is Emil Crona and I am learning web and software developing and have a passion for Working out, Music,
-          Gaming, Nature, and all things tech. Exploring the realms of networking and
-          cybersecurity.
-        </p>
+  <body>
+    <div class="page-shell">
+      <button class="open-btn" onclick="toggleSidebar()" aria-label="Open navigation">☰</button>
+
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <div>
+            <p class="sidebar-label">Navigation</p>
+            <span class="sidebar-subtitle">Learn more about me</span>
+          </div>
+          <button class="close-btn" onclick="toggleSidebar()" aria-label="Close navigation">×</button>
+        </div>
+        <nav>
+          <a href="index.html" class="tab-btn">Home</a>
+          <a href="about-me.html" class="tab-btn active">About Me</a>
+          <a href="link-tree.html" class="tab-btn">Link Tree</a>
+        </nav>
+      </aside>
+
+      <main class="container">
+        <section class="page-hero">
+          <div class="page-card">
+            <img
+              src="https://cdn.discordapp.com/stickers/1370377133930840094.png?name=Cat+drinking+lava"
+              alt="Profile Picture"
+              class="profile-pic"
+            />
+            <div class="hero-copy">
+              <span class="eyebrow">About Emil</span>
+              <h1>Learning developer, tech fan, and everyday explorer.</h1>
+              <p>
+                I enjoy building clean websites, diving into software development,
+                and exploring networking and cybersecurity. Outside of code, I love
+                working out, gaming, listening to music, and spending time in nature.
+              </p>
+            </div>
+          </div>
+
+          <div class="content-grid">
+            <article class="feature-card">
+              <h2>What I love</h2>
+              <ul class="info-list">
+                <li>Web and app development</li>
+                <li>Security concepts and networking</li>
+                <li>Fitness, music, and gaming</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <h2>Current focus</h2>
+              <p>
+                Building better personal pages, refining user experience, and
+                learning modern HTML/CSS patterns that make my sites feel polished.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h2>Next goal</h2>
+              <p>
+                Share more projects, improve interactivity, and connect with people
+                through the sites and channels that matter most.
+              </p>
+            </article>
+          </div>
+        </section>
       </main>
     </div>
     <script src="scripts/main.js"></script>
