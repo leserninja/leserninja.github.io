@@ -3,50 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Link Tree — EC</title>
+    <title>Link Tree</title>
     <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body>
-    <div class="page-shell">
-      <button class="open-btn" onclick="toggleSidebar()" aria-label="Open navigation">☰</button>
-
-      <aside class="sidebar" id="sidebar">
-        <div class="sidebar-header">
-          <div>
-            <p class="sidebar-label">Navigation</p>
-            <span class="sidebar-subtitle">Quick links</span>
-          </div>
-          <button class="close-btn" onclick="toggleSidebar()" aria-label="Close navigation">×</button>
-        </div>
-        <nav>
-          <a href="index.html" class="tab-btn">Home</a>
-          <a href="about-me.html" class="tab-btn">About Me</a>
-          <a href="link-tree.html" class="tab-btn active">Link Tree</a>
-        </nav>
-      </aside>
-
-      <main class="container">
-        <section class="page-hero">
-          <div class="page-card">
-            <img
-              src="https://cdn.discordapp.com/stickers/1370377133930840094.png?name=Cat+drinking+lava"
-              alt="Profile Picture"
-              class="profile-pic"
-            />
-            <div class="hero-copy">
-              <span class="eyebrow">Stay connected</span>
-              <h1>My favorite places to hang out online.</h1>
-              <p>
-                Tap into my main channels and social profiles with a bold, modern link hub.
-              </p>
-              <div class="hero-actions button-group">
-                <a class="button primary" href="https://www.youtube.com/@EmilCrona" target="_blank" rel="noreferrer">YouTube</a>
-                <a class="button secondary" href="https://www.instagram.com/ecro07/" target="_blank" rel="noreferrer">Instagram</a>
-                <a class="button secondary" href="https://www.twitch.tv/iamleser_" target="_blank" rel="noreferrer">Twitch</a>
-              </div>
-            </div>
-          </div>
-        </section>
+  <body class="link-tree-page">
+    <div class="sidebar" id="sidebar">
+      <button class="close-btn" onclick="toggleSidebar()"></button>
+      <nav>
+        <a href="index.html" class="tab-btn">Home</a>
+        <a href="about-me.html" class="tab-btn">About Me</a>
+        <a href="link-tree.html" class="tab-btn">Link Tree</a>
+      </nav>
+    </div>
+    <button class="open-btn" onclick="toggleSidebar()">☰</button>
+    <div class="container">
+      <header>
+        <h1>Link Tree</h1>
+      </header>
+      <main>
+        <a href="https://www.youtube.com/@EmilCrona" class="link-button"
+          >Youtube</a
+        >
+        <a href="https://www.instagram.com/ecro07/" class="link-button"
+          >Instagram</a
+        >
+        <a href="https://www.twitch.tv/iamleser_" class="link-button">Twitch</a>
       </main>
     </div>
     <script src="scripts/main.js"></script>
